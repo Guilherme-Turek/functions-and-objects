@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+</head>
+<body>
+    <script>
+        let aluno1 = new Object();
+        aluno1.nome = 'João';
+        aluno1.nota1 = 60;
+        aluno1.nota2 = 70;
+
+        let aluno2 = new Object();
+        aluno2.nome = 'Maria';
+        aluno2.nota1 = 80;
+        aluno2.nota2 = 70;
+
+        console.log(aluno1)
+        console.log(aluno2)
+
+        let media1 = (aluno1.nota1 + aluno1.nota2) / 2
+        console.log(`A média do ${aluno1.nome} é ${media1}`)
+
+        let media2 = (aluno2.nota1 + aluno2.nota2) / 2
+        console.log(`A média do ${aluno2.nome} é ${media2}`)
+
+        let mediaTurma = (aluno1.nota1 + aluno1.nota2 + aluno2.nota1 + aluno2.nota2) / 4
+        console.log(`A média da turma é ${mediaTurma}`)
+        
+    </script>
+</body>
+</html>
