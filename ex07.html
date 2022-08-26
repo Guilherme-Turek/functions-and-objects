@@ -8,26 +8,18 @@
 </head>
 <body>
     <script>
-        let aluno1 = new Object();
-        aluno1.nome = 'João';
-        aluno1.nota1 = 60;
-        aluno1.nota2 = 70;
+        const aluno1 = {nome: 'João', notas: [8,6]};
+        const aluno2 = {nome: 'Maria', notas: [7,9]};
+        console.log(aluno1);
+        console.log(aluno2);
 
-        let aluno2 = new Object();
-        aluno2.nome = 'Maria';
-        aluno2.nota1 = 80;
-        aluno2.nota2 = 70;
-
-        console.log(aluno1)
-        console.log(aluno2)
-
-        let media1 = (aluno1.nota1 + aluno1.nota2) / 2
+        let media1 = (aluno1.notas[0] + aluno1.notas[1]) / 2
         console.log(`A média do ${aluno1.nome} é ${media1}`)
 
-        let media2 = (aluno2.nota1 + aluno2.nota2) / 2
+        let media2 = (aluno2.notas[0] + aluno2.notas[1]) / 2
         console.log(`A média do ${aluno2.nome} é ${media2}`)
 
-        let mediaTurma = (aluno1.nota1 + aluno1.nota2 + aluno2.nota1 + aluno2.nota2) / 4
+        let mediaTurma = (media1 + media2) / 2
         console.log(`A média da turma é ${mediaTurma}`)
         
     </script>

@@ -8,14 +8,8 @@
 </head>
 <body>
     <script>
-        const notebook = {
-            processador : 'i7',
-            memoria : '16GB',
-            preco : 5000,
-            hd : '1TB',
-            ssd : '256GB' 
-        }
-            console.log(notebook)  
+        const notebook = { processador : 'i7', memoria : '16GB', preco : 5000, hd : '1TB', ssd : '256GB'};
+        for(let i in notebook){console.log(`${i} = ${notebook[i]}`)};
     </script>
 </body>
 </html>
